@@ -42,7 +42,7 @@ cacheSolve <- function(x, ...) {
   }
   # Otherwise, it calculates the matrix
   # and sets the value in the cache 
-  # via the setmean function.
+  # via the calculation function.
   data <- x$get_matrix()
   cache_object <- inv_matrix(data,...)
   x$cache_inv(cache_object)
